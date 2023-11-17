@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicional</title>
+</head>
+<body>
+    <h1> trabalhando com condicional</h1>
+    <p id="parag">Estamos relembrando condicionais </p> 
+    <script>
+        var mensagem = document.getElementById("parag");
+        var numero = Math.floor(Math.random()*10)+1;
+        window.alert(numero)
+        if(numero >5){
+            mensagem.textContent= "numero maior que 5!"
+        }else if(numero === 5){
+            mensagem.textContent= "numero é igual a 5!"
+        }else {
+            mensagem.textContent= "numero menor que 5!"
+        }
+    </script>
+</body>
+</html>
